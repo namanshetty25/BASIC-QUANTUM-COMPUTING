@@ -1,0 +1,1 @@
+This repository contains a quantum circuit simulation using PennyLane and Matplotlib. The circuit applies a series of quantum gates to 3 qubits and visualizes the probability distribution of the output states.
