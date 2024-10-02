@@ -6,9 +6,10 @@ dev=qml.device("default.qubit",wires=n)
 @qml.qnode(dev)
 def quantum_circuit():
     qml.PauliX(wires=1)
-    qml.Hadamard(wires=1)   #o means 1st qubit and 1 means 2nd
+    qml.Hadamard(wires=1)   
     qml.PauliX(wires=0)
     qml.PauliX(wires=2)
+    qml.CNOT(wires=[0,2])
     return qml.state()
 state=quantum_circuit()
 print("Final state=",state)
