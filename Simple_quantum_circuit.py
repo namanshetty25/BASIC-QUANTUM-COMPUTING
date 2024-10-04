@@ -17,8 +17,8 @@ drawer=qml.draw(quantum_circuit)
 print(drawer())
 def plot_bar(state):
     probs=np.abs(state)**2
-    plt.bar(range(len(probs)),probs)
-    plt.xticks(range(len(probs)),['000','001','010','011','100','101','110','111'])
+    labels=['000','001','010','011','100','101','110','111']
+    plt.bar(labels,probs)
     plt.xlabel('Basic States')
     plt.ylabel('Probability')
     plt.title('Qubit State probabilities')
