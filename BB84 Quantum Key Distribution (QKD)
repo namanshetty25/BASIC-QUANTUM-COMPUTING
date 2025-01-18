@@ -51,3 +51,14 @@ print("Bob's bases:     ", bob_bases)
 print("Bob's results:   ", bob_results)
 print("Matching bases:  ", matching_bases)
 print("Shared key:      ", shared_key)
+
+'''
+Expected Output:
+Alice's bits:     [1 1 1 0 0 0 1 1 0 0]
+Alice's bases:    ['Z' 'X' 'X' 'Z' 'X' 'Z' 'Z' 'X' 'X' 'X']
+Bob's bases:      ['X' 'X' 'X' 'X' 'X' 'Z' 'X' 'Z' 'Z' 'Z']
+Bob's results:    [0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
+Matching bases:   [False  True  True False  True  True False False False False]
+Shared key:       [1 1 0 0]
+'''
+
